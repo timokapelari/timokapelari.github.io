@@ -167,7 +167,7 @@ details p {
 
 /* ---------- Cover photo strip ---------- */
 .cover {
-  height: clamp(200px, 25vw, 500px);
+  height: clamp(300px, 17vw, 600px);
   background: var(--surface) url(banner.jpg) center 55% / cover no-repeat;
 }
 .hero { padding-top: 0; }
