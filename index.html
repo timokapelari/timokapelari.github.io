@@ -3,11 +3,211 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Timo Kapelari</title>
+  <title>Timo Kapelari · Economist</title>
+  <meta name="description" content="Timo Kapelari — PhD student in Economics at the European University Institute. Development economics, education, gender and migration.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    // Apply saved theme before the page paints (avoids a flash of the wrong theme)
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
 </head>
-<body style="font-family: Georgia, serif; max-width: 640px; margin: 80px auto; padding: 0 16px;">
-  <h1>Timo Kapelari</h1>
-  <p>PhD candidate in Economics, European University Institute.</p>
-  <p>Website coming soon.</p>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar-inner">
+    <a class="brand" href="#about">Timo Kapelari</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#teaching">Teaching</a>
+      <a href="files/CV_Timo_Kapelari.pdf" target="_blank" rel="noopener">CV</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch between light and dark theme">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ABOUT -->
+  <section id="about" class="hero">
+    <div class="portrait">
+      <img src="assets/portrait.jpg" alt="Portrait of Timo Kapelari" width="180" height="180">
+    </div>
+    <div class="hero-text">
+      <h1>Timo Kapelari</h1>
+      <p class="role">PhD Student in Economics<br>European University Institute, Florence</p>
+
+      <p>I am a PhD student in Economics at the European University Institute, supervised by
+        Sule Alan and Alessandro Tarozzi.
+        I work in development economics, with a focus on education and gender. Alongside the PhD, I am a
+        Research Economist with the World Bank's Europe and Central Asia urban team, working on Tajikistan.</p>
+      <p>Over the past six years I have conducted research in Sub-Saharan Africa, Bangladesh and Central Asia.
+        Before the PhD, I was a Research Associate in the World Bank's Development Impact Evaluation (DIME) group,
+        working on agricultural technology adoption in Mozambique, and a research assistant to Nava Ashraf at the
+        London School of Economics.</p>
+
+      <ul class="tags" aria-label="Research interests">
+        <li>Development Economics</li>
+        <li>Economics of Education</li>
+        <li>Economics of Gender</li>
+        <li>Economics of Migration</li>
+      </ul>
+
+      <div class="contact">
+        <a class="btn" href="mailto:timo.kapelari@eui.eu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg>
+          timo.kapelari@eui.eu</a>
+        <a class="btn" href="files/CV_Timo_Kapelari.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          CV</a>
+        <a class="btn" href="https://github.com/TKapelari" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          GitHub</a>
+      </div>
+
+      <address class="postal">
+        Department of Economics, European University Institute<br>
+        Via delle Fontanelle 18, 50014 Fiesole (FI), Italy
+      </address>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <h3 class="subhead">Work in Progress</h3>
+    <article class="paper">
+      <h4>Stolen Brides: Weather Shocks and Abduction Marriages in Kyrgyzstan</h4>
+      <p class="authors">with Aizhamal Rakhmetova and Ivan Trestcov</p>
+    </article>
+    <article class="paper">
+      <h4>Changing Boys' Attitudes to Improve Girls' Academic and Socioemotional Outcomes: Fostering Empathy and Respect in Schools</h4>
+      <p class="authors">with Sule Alan, Bilge Erten, Sakib Mahmood and Atiya Rahman</p>
+    </article>
+
+    <h3 class="subhead">Unpublished Work</h3>
+    <article class="paper">
+      <h4>Household Level Effects of Flooding: Evidence from Thailand</h4>
+      <p class="authors">with Zhuldyz Ashikbayeva, Marei Fürstenberg, Albert Pierres and Stephan Thies</p>
+      <p class="venue">TVSEP Working Paper WP-022, 2020</p>
+      <details>
+        <summary>Summary</summary>
+        <p>Using household panel data from rural Northeast Thailand (2007–2016) combined with satellite-based flood
+          measures, we estimate the causal effect of flooding on household income and expenditure. Floods reduce
+          household income and raise spending on food and health. Households appear to adapt: it is deviations from
+          usual flood levels, not flooding as such, that cause harm. Education beyond primary school offsets the
+          negative effects.</p>
+      </details>
+      <p class="links">
+        <a href="https://www.tvsep.de/fileadmin/tvsep/Publications/wpaper2020/wp-022.pdf" target="_blank" rel="noopener">PDF</a>
+        <a href="https://ideas.repec.org/p/tvs/wpaper/wp-022.html" target="_blank" rel="noopener">RePEc</a>
+      </p>
+    </article>
+
+    <h3 class="subhead">Publications</h3>
+    <article class="paper">
+      <h4>Trade Models in the European Union</h4>
+      <p class="authors">with Claudius Gräbner-Radkowitsch, Dennis Tamesberger, Philipp Heimberger and Jakob Kapeller</p>
+      <p class="venue"><em>Economic Annals</em>, 2022, 67(235): 7–36</p>
+      <details>
+        <summary>Summary</summary>
+        <p>Studying the factors behind differences in trade performance across 22 EU economies, the paper derives six
+          "trade models" (primary goods, finance, flexible labour market, periphery, industrial workbench and high-tech)
+          and traces their developmental and distributional dynamics. Wage shares shrink and inequality rises in most
+          models; the high-tech model proves comparatively stable.</p>
+      </details>
+      <p class="links">
+        <a href="https://ideas.repec.org/a/beo/journl/v67y2022i235p7-36.html" target="_blank" rel="noopener">RePEc</a>
+        <a href="https://github.com/graebnerc/trade-typology" target="_blank" rel="noopener">Replication code</a>
+      </p>
+    </article>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul class="timeline">
+      <li>
+        <span class="when">2026 – present</span>
+        <div>
+          <strong>Research Economist, The World Bank (Europe and Central Asia, Urban)</strong>
+          <p>Tajikistan Urban Nexus Report: urbanization, productivity of cities and municipal service delivery.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2020 – 2022</span>
+        <div>
+          <strong>Research Associate, The World Bank (DIME)</strong>
+          <p>Mozambique team. Agricultural technology adoption and resource management; primary data collection with
+            over 4,500 rural households; pilot study on phasing out an input subsidy for cashew farmers, with GIZ and the EU.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2019 – 2020</span>
+        <div>
+          <strong>Research Assistant to Nava Ashraf, London School of Economics</strong>
+          <p>Marshall Institute. Education, female entrepreneurship and behavioural economics projects in Uganda, Colombia and Zambia.</p>
+        </div>
+      </li>
+      <li>
+        <span class="when">2018 – 2019</span>
+        <div>
+          <strong>Research Associate, Johannes Kepler University Linz</strong>
+          <p>Institute for Comprehensive Analysis of the Economy. Trade models in the European Union.</p>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="subhead">Grants &amp; Awards</h3>
+    <ul class="plain">
+      <li><span class="when">2025</span> <span>EUI Collaboration Agreement for Dissertation Project</span></li>
+      <li><span class="when">2024</span> <span>Travel Grant, The Weiss Fund for Research in Development Economics</span></li>
+      <li><span class="when">2022 – 2025</span> <span>PhD Grant, Austrian Agency for Education and Internationalisation (OeAD)</span></li>
+    </ul>
+  </section>
+
+  <!-- TEACHING -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <ul class="plain">
+      <li><span class="when">2025</span> <span>Teaching Assistant, <em>Panel Data for Banking Sector</em> (Jeffrey Wooldridge), European University Institute</span></li>
+      <li><span class="when">2020</span> <span>Instructor, <em>Managing Successful Impact Evaluation Surveys</em>, module on high-frequency data checks, The World Bank</span></li>
+      <li><span class="when">2016 – 2018</span> <span>Teaching Assistant, <em>Managerial Economics</em> (Rudolf Winter-Ebmer), Johannes Kepler University Linz</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">© 2026 Timo Kapelari · Last updated October 2026</div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.getElementById('themeToggle');
+    function current() {
+      var t = root.getAttribute('data-theme');
+      if (t) return t;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    btn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) {}
+    });
+  })();
+</script>
 </body>
 </html>
