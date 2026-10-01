@@ -158,9 +158,23 @@ details p {
 @media (max-width: 680px) {
   .topbar-inner { height: 54px; }
   .brand { display: none; }
-  .nav { width: 100%; justify-content: space-between; gap: 12px; }
+  .nav { width: 100%; justify-content: space-between; gap: 8px; font-size: .84rem; }
   .hero { grid-template-columns: 1fr; gap: 24px; padding: 36px 0 28px; }
   .portrait img, .monogram { width: 120px; height: 120px; font-size: 2.4rem; }
   h1 { font-size: 2.1rem; }
   .timeline li, .plain li { grid-template-columns: 1fr; gap: 2px; }
+}
+
+/* ---------- Cover photo strip ---------- */
+.cover {
+  height: 300px;
+  background: var(--surface) url(banner.jpg) center 62% / cover no-repeat;
+}
+.hero { padding-top: 0; }
+.portrait img { margin-top: -90px; border: 5px solid var(--bg); box-sizing: content-box; position: relative; }
+.hero-text { padding-top: 28px; }
+@media (max-width: 680px) {
+  .cover { height: 190px; }
+  .portrait img { margin-top: -60px; }
+  .hero-text { padding-top: 0; }
 }
