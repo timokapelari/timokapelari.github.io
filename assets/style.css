@@ -120,6 +120,11 @@ h2 { font-family: var(--serif); font-weight: 500; font-size: 1.85rem; margin: 0 
 .paper:last-of-type { border-bottom: 0; }
 .paper h4 { font-family: var(--serif); font-size: 1.22rem; font-weight: 600; line-height: 1.35; margin: 0 0 4px; }
 .authors, .venue { margin: 0; color: var(--muted); font-size: .93rem; }
+.note {
+  display: inline-block; margin: 8px 0 0; padding: 2px 10px; border-radius: 999px;
+  font-size: .78rem; font-weight: 500; font-style: italic;
+  background: var(--accent-soft); color: var(--accent);
+}
 details { margin-top: 10px; }
 summary {
   cursor: pointer; display: inline-block; font-size: .86rem; font-weight: 500; color: var(--accent);
