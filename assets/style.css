@@ -167,8 +167,8 @@ details p {
 
 /* ---------- Cover photo strip ---------- */
 .cover {
-  height: clamp(200px, 30vw, 600px);
-  background: var(--surface) url(banner.jpg) center 64% / cover no-repeat;
+  height: clamp(200px, 25vw, 500px);
+  background: var(--surface) url(banner.jpg) center 55% / cover no-repeat;
 }
 .hero { padding-top: 0; }
 .portrait img { margin-top: -90px; border: 5px solid var(--bg); box-sizing: content-box; position: relative; }
