@@ -167,14 +167,13 @@ details p {
 
 /* ---------- Cover photo strip ---------- */
 .cover {
-  height: 300px;
-  background: var(--surface) url(banner.jpg) center 62% / cover no-repeat;
+  height: clamp(200px, 30vw, 600px);
+  background: var(--surface) url(banner.jpg) center 64% / cover no-repeat;
 }
 .hero { padding-top: 0; }
 .portrait img { margin-top: -90px; border: 5px solid var(--bg); box-sizing: content-box; position: relative; }
 .hero-text { padding-top: 28px; }
 @media (max-width: 680px) {
-  .cover { height: 190px; }
   .portrait img { margin-top: -60px; }
   .hero-text { padding-top: 0; }
 }
